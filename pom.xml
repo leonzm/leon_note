@@ -10,6 +10,10 @@
   <name>leon_note Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
+  <properties>
+      <apache.http.version>4.5.2</apache.http.version>
+  </properties>
+  
   <dependencies>
   
     <dependency>
@@ -35,6 +39,30 @@
 	    <groupId>org.mapdb</groupId>
 	    <artifactId>mapdb</artifactId>
 	    <version>2.0-beta10</version>
+	</dependency>
+	
+	<dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.3</version>
+    </dependency>
+    
+    <dependency>
+       <groupId>org.apache.httpcomponents</groupId>
+	   <artifactId>httpclient</artifactId>
+	   <version>${apache.http.version}</version>
+    </dependency>
+     
+    <dependency>
+	   <groupId>org.apache.httpcomponents</groupId>
+	   <artifactId>httpmime</artifactId>
+	   <version>${apache.http.version}</version>
+    </dependency>
+    
+    <dependency>
+		 <groupId>com.squareup.okhttp</groupId>
+		 <artifactId>okhttp</artifactId>
+		 <version>2.5.0</version>
 	</dependency>
     
   </dependencies>
